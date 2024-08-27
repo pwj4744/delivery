@@ -15,7 +15,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Business
 public class TokenBusiness {
-    //여기서 토큰 발행
+    //여기서 토큰 발행, 여기는 토큰영역만 담당.
     private final TokenService tokenService;
     private final TokenConverter tokenConverter;
 

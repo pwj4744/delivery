@@ -13,11 +13,11 @@ import java.util.Objects;
 @Converter
 public class TokenConverter {
 
-    public TokenResponse toResponse(
+    public TokenResponse toResponse(    //토큰 두개를 받음.
         TokenDto accessToken,
         TokenDto refreshToken
     ){
-        Objects.requireNonNull(accessToken, ()->{throw new ApiException(ErrorCode.NULL_POINT);});
+        Objects.requireNonNull(accessToken, ()->{throw new ApiException(ErrorCode.NULL_POINT);});   // null값 처리
         Objects.requireNonNull(refreshToken, ()->{throw new ApiException(ErrorCode.NULL_POINT);});
 
         return TokenResponse.builder()

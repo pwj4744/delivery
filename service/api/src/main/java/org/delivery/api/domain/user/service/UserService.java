@@ -51,7 +51,7 @@ public class UserService {
             UserStatus.REGISTERED
         ).orElseThrow(()-> new ApiException(UserErrorCode.USER_NOT_FOUND));
     }
-
+    //오버로딩
     public UserEntity getUserWithThrow(
         Long userId
     ){
